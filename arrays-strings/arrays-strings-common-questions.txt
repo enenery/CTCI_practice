@@ -1,0 +1,8 @@
+Arrays and Strings Common Questions
+
+-Given two strings, write a method/function to decide if one is a permutation(anagrams) of each other.
+*Anagrams (Permutation): a word, phrase, or name formed by rearranging the letters of another.
+ex) cinema <-> iceman, abc <-> cab
+
+Palindrom: a word phrase, or sequence that reads the same backwards as forward.
+ex) madam, anna
