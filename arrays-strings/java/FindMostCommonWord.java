@@ -1,5 +1,8 @@
 import java.util.*;
 
+/**
+*/
+
 public class FindMostCommonWord{
 	
 	public static void main(String args[]){
