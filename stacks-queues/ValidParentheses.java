@@ -1,6 +1,6 @@
 import java.util.*;
 /**
-20. Valid Parentheses
+20. Valid Parentheses from LeetCode
 Given a string containing just the characters '(', ')', '{', '}', '[' and ']', 
 determine if the input string is valid.
 The brackets must close in the correct order, 
