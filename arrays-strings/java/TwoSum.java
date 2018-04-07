@@ -22,9 +22,11 @@ class TwoSum {
         boolean found = false;
         
         while(i < nums.length && !found){
-            if(map.containsKey(target-nums[i])){
+			int diff = target-nums[i];
+			System.out.println(diff);
+            if(map.containsKey(diff)){
                 found = true;
-                ans[0] = map.get(target-nums[i]);
+                ans[0] = map.get(diff);
                 ans[1] = i;
             }else{
                 map.put(nums[i], i);
@@ -36,6 +38,6 @@ class TwoSum {
     }
 	
 	public static void main(String args[]){
-		System.out.println(Arrays.toString(twoSum(new int[] {1, 2, 3, 4, 9, 6}, 8)));
+		System.out.println(Arrays.toString(twoSum(new int[] {2, 7, 11, 15}, 9)));
 	}
 }

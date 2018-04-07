@@ -20,7 +20,8 @@ public class MaximumSubarray{
 		int currentLowIndex = 1;
 		
 		//int[] a = {0, 13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7};
-		int[] a = {0, -3, -3, -3};
+		//int[] a = {0, -2, -2, -2};
+		int[] a = {0, 13, -3, -25, 20, -3, -16, -23};
 		
 		for(int i = 1; i < a.length; i++){
 			currentSum += a[i];
@@ -32,10 +33,12 @@ public class MaximumSubarray{
 			
 			if(currentSum < 0){
 				currentSum = 0;
-				currentLowIndex = i + 1;
+				currentLowIndex = i;
 			}
 		}
-		
-		System.out.println(bestLowIndex + " " + bestHighIndex + " " + maxSum);
+		if(bestLowIndex != bestHighIndex)
+			System.out.println(bestLowIndex + " " + bestHighIndex + " " + maxSum);
+		else
+			System.out.println("Buy and sell on the same day to avoid loosing money");
 	}
 }

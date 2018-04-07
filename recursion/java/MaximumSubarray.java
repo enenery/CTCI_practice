@@ -33,8 +33,8 @@ public class MaximumSubarray{
 	
 	public static void main(String args[]){
 		//int arr[] = {0, -2, 1, -2, 1, 1, 1, 2, -2, 0, -1};
-		//int[] arr = {0, 13, -3, -25, 20, -3, -16, -23};
-		int[] arr = {0, 13};
+		int[] arr = {-3, -13, -4, -25, -20, -32, -16, -23};
+		//int[] arr = {0, 13};
 		int lastIndex = arr.length;
 		int maxSum = maxSubArraySum(arr, 0, lastIndex-1);
 		System.out.println("Max contiguous sum = " + maxSum);
