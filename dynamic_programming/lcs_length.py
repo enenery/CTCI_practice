@@ -29,12 +29,12 @@ def print_lcs(b, x, i, j):
 	if i == 0 or j == 0:
 		return
 	if b[i][j] == "↖":
-		print_lcs(b, x, i-1, j-1)
+		print_lcs(b, x, i - 1, j - 1)
 		print(x[i])
 	elif b[i][j] == "↑":
-		print_lcs(b, x, i-1, j)
+		print_lcs(b, x, i - 1, j)
 	else:
-		print_lcs(b, x, i, j-1)
+		print_lcs(b, x, i, j - 1)
 
 def print_matrix(x):
 	for i in range(len(x)):
@@ -42,8 +42,8 @@ def print_matrix(x):
 			print(x[i][j], end="")
 		print("")
 
-x = [' ', 'a', 'b', 'c', 'b', 'd', 'a', 'b']
-y = [' ', 'b', 'd', 'c', 'a', 'b', 'a']
+x = [' ', '1', '0', '0', '1', '0', '1', '0', '1']
+y = [' ', '0', '1', '0', '1', '0', '1', '1', '0']
 
 c, b = lcs_length(x, y)
 print_matrix(b)
